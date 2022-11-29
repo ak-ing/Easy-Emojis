@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Easily Emojis</string>
+    <string name="page_title">图片搜索</string>
+
+    <!--menu-->
+    <string name="favorite">喜欢</string>
+    <string name="search">搜索</string>
+    <string name="more">更多</string>
+
+    <!--contentDescription-->
+    <string name="content_description_favorite">喜欢的</string>
+    <string name="content_description_search">搜索按钮</string>
+    <string name="content_description_more">更多菜单</string>
+
+    <!--text-->
+    <string name="tx_hint">搜图</string>
+</resources>

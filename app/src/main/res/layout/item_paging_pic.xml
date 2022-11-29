@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.widget.ImageView.ScaleType" />
+
+        <variable
+            name="item"
+            type="com.aking.easilyemojis.bean.Pic" />
+    </data>
+
+    <ImageView
+        coilSrc="@{item.img}"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/grid_0_25" />
+
+</layout>
