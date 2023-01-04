@@ -21,4 +21,5 @@ class HomeViewModel : BaseViewModel() {
     fun requestPic(query: HashMap<String, String>) {
         queryState.value = query
     }
+
 }

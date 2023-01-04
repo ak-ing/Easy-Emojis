@@ -13,7 +13,7 @@ abstract class BaseFragment(@LayoutRes val layoutRes: Int) : Fragment(layoutRes)
 
     override fun showLoading() {
         if (progressDialog == null) progressDialog = ProgressDialog(requireActivity())
-        progressDialog?.show()
+        progressDialog?.show( )
     }
 
     override fun dismissLoading() {

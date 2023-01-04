@@ -7,13 +7,13 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
-import androidx.paging.map
 import com.aking.easilyemojis.R
 import com.aking.easilyemojis.base.BaseFragment
 import com.aking.easilyemojis.databinding.FragmentMainBinding
 import com.aking.easilyemojis.ui.adapter.PicPagingAdapter
 import com.aking.easilyemojis.ui.vm.HomeViewModel
 import com.aking.easilyemojis.util.binding
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
@@ -58,11 +58,14 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         }
 
         lifecycleScope.launch {
+            Log.d("TAG", "launch: ")
+            delay(2000)
             vm.picPagingFlow.collect {
-                it.map { Log.d("TAG", "requestPic: ${it}") }
+                Log.d("TAG", "requestPic:")
                 picPagingAdapter.submitData(it)
             }
         }
+
     }
 
     private fun init() {
